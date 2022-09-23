@@ -16,7 +16,7 @@ project:
   clock_hz:     1       
   language:     "wokwi" 
   wokwi_id:     341609034095264340       
-  picture:      "HELLo-3orld-7seg.gif"      
+  picture:      "HELLo-3orld-7seg.png"      
   inputs:               
     - clock
     - reset
