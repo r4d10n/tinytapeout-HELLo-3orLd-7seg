@@ -6,33 +6,33 @@
 #
 # This will be automatically collected and used to make a datasheet for the chip.
 project: 
-  author:       ""      # Your name
-  title:        ""      # Project title
-  description:  ""      # Short description of what your project does
-  how_it_works: ""      # Longer description of how the project works
-  how_to_test:  ""      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
-  external_hw:  ""      # Describe any external hardware needed
-  doc_link:     ""      # URL to longer form documentation, eg the README.md in your repository
-  clock_hz:     0       # Clock frequency in Hz (if required)
-  language:     "wokwi" # other examples include Verilog, Amaranth, VHDL, etc
-  wokwi_id:     0       # the wokwi ID
-  picture:      ""      # relative path to a picture in your repository
-  inputs:               # a description of what the inputs do
+  author:       "Rakesh Peter"      
+  title:        "tinytapeout-HELLo-3orLd-7seg"      
+  description:  "HELLo-3orLd Runner on 7 segment Display"      
+  how_it_works: "BCD Counter with 7 seg Decoder"      
+  how_to_test:  "All toggle switches in zero position and clock switch on for auto runner. Individual BCD bits can be toggled using corresponding inputs with clock switch off."      
+  external_hw:  "none"      
+  doc_link:     "https://github.com/r4d10n/tinytapeout-HELLo-3orLd-7seg/blob/main/README.md"      
+  clock_hz:     1       
+  language:     "wokwi" 
+  wokwi_id:     341609034095264340       
+  picture:      "HELLo-3orld-7seg.gif"      
+  inputs:               
     - clock
     - reset
     - none
-    - none
-    - none
-    - none
-    - none
-    - none
+    - dp toggle
+    - BCD bit 3
+    - BCD bit 2
+    - BCD bit 1
+    - BCD bit 0
   outputs:
-    - segment a         # a description of what the outputs do
+    - segment a         
     - segment b
     - segment c
     - segment d
     - segment e
     - segment f
     - segment g
-    - none
+    - segment dp
 
